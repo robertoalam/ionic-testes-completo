@@ -1,0 +1,101 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="voltar()"></ion-icon>
+    <ion-title>Mascaras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+
+  <ion-list (click)="navegar('veiculo')">
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2"><ion-icon size="large" name="car"></ion-icon></ion-col>
+          <ion-col size="9"><ion-label>Veiculos</ion-label></ion-col>
+          <ion-col size="1"><ion-icon size="large" name="chevron-forward-outline"></ion-icon></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+  <ion-list (click)="navegar('documento')">
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2"><ion-icon size="large" name="document-outline"></ion-icon></ion-col>
+          <ion-col size="9"><ion-label>Documentos</ion-label></ion-col>
+          <ion-col size="1"><ion-icon size="large" name="chevron-forward-outline"></ion-icon></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+  <ion-list (click)="navegar('telefonia')">
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2"><ion-icon size="large" name="call-outline"></ion-icon></ion-col>
+          <ion-col size="9"><ion-label>Telefonia</ion-label></ion-col>
+          <ion-col size="1"><ion-icon size="large" name="chevron-forward-outline"></ion-icon></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">CEP</ion-label>
+            <ion-input type="text" [(ngModel)]="cep" (input)="mascararCEP($event)" maxlength="9" step="cep"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">18 > Idade < 90</ion-label>
+            <ion-input [(ngModel)]="idade" (keyup)="marscararIdade($event)" step="numeros" min=18 max=90 maxLength="2" type="number"></ion-input>
+          </ion-item>
+        </ion-list> 
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">STRING(s)</ion-label>
+            <ion-input [(ngModel)]="somenteString" (keyup)="mascararSomenteString($event)" step="strings" type="text"></ion-input>
+          </ion-item>
+        </ion-list> 
+      </ion-col>
+      <ion-col size="6">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">NUMERO(s)</ion-label>
+            <ion-input [(ngModel)]="somenteNumeros" (keyup)="mascararSomenteNumero($event)" step="numeros" type="number" maxlength="4"></ion-input>
+          </ion-item>
+        </ion-list> 
+      </ion-col>      
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="6">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">MAX(3)</ion-label>
+            <ion-input 
+              type="number" 
+              #auxValidador
+              (input)="this.mascaraNovaService.max(auxValidador , 3)" 
+            ></ion-input>
+          </ion-item>
+        </ion-list> 
+      </ion-col> 
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

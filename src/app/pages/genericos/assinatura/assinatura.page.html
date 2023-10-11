@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="voltar()"></ion-icon>
+    <ion-title>Assinatura</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <div class="ion-text-justify">
+      <ion-row>
+        <ion-col size="12">
+          <canvas #canvas (touchstart)="startDrawing($event)" (touchmove)="moved($event)"></canvas>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-button color="primary" (click)="salvar()">SALVAR</ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button color="danger" (click)="clearPad()">LIMPAR</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+
+  <div *ngIf="arquivoImagem">
+    <img  src='{{ arquivoImagem }}' />
+  </div>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="ionViewCanLeave()"></ion-icon>
+    <ion-title>CARACTERISTICAS</ion-title>
+    <ion-icon name="save" slot="end" size="large" (click)="salvar()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Altura</ion-label>
+      <ion-select interface="popover" [(ngModel)]="altura" (ionChange)="selecionar($event)" [multiple]="false" >
+        <ion-select-option *ngFor="let o of listaAltura" [value]="o">{{o}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Cabelo</ion-label>
+      <ion-select interface="popover" [(ngModel)]="cabelo" (ionChange)="selecionar($event)" [multiple]="false" >
+        <ion-select-option *ngFor="let o of listaCabelo" [value]="o">{{o}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>  
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Cor</ion-label>
+      <ion-select interface="popover" [(ngModel)]="cor" (ionChange)="selecionar($event)" [multiple]="false" >
+        <ion-select-option *ngFor="let o of listaCor" [value]="o">{{o}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>  
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Fisico</ion-label>
+      <ion-select interface="popover" [(ngModel)]="fisico" (ionChange)="selecionar($event)" [multiple]="false" >
+        <ion-select-option *ngFor="let o of listaFisico" [value]="o">{{o}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>    
+</ion-content>

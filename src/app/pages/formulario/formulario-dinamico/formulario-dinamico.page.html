@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="voltar()"></ion-icon>
+    <ion-title>FORM. DINAMICO</ion-title>
+    <ion-icon name="checkmark-sharp" slot="end" size="large" (click)="salvar()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <form [formGroup]="formulario" id="formulario">
+    <ul class="lista">
+      <li *ngFor="let campo of atributosDoObjeto; let input = index; let inputName = index; let auxValidador = index">
+        <ion-list>
+          <ion-item>
+            <ion-label [ngClass]="campo.OBRIGATORIO ? 'label-obrigatorio' : '' " position="floating">
+              <div *ngIf="campo.OBRIGATORIO" class="asterisco">*</div>{{campo.NAME}}-{{campo.NOME_LABEL}}
+            </ion-label>
+            <div *ngIf="campo.OBRIGATORIO; else semObrigatoriedade">
+              <ion-select 
+                *ngIf="exibirCampoSelect(campo)" 
+                name="{{campo.NAME}}"
+                interface="popover"
+                [(ngModel)]="campo.VALOR" 
+                placeholder="Selecione" 
+                [ngModelOptions]="{standalone: true}"
+                [required]="campo.OBRIGATORIO"
+                [formControlName]="campo.NAME"
+              >
+                <ion-select-option *ngFor="let v of campo.valores" [value]="v.ID">{{v.VALOR}}</ion-select-option>
+              </ion-select>
+            </div>
+            <ng-template #semObrigatoriedade>
+              <ion-select 
+                *ngIf="exibirCampoSelect(campo)" 
+                name="{{campo.NAME}}"
+                interface="popover"
+                [(ngModel)]="campo.VALOR" 
+                placeholder="Selecione" 
+                [ngModelOptions]="{standalone: true}"
+              >
+                <ion-select-option *ngFor="let v of campo.valores" [value]="v.ID">{{v.VALOR}}</ion-select-option>
+              </ion-select>
+            </ng-template> 
+        
+
+            <!-- INPUT -->
+            <div *ngIf="campo.OBRIGATORIO" style="width: 100vw!important;">
+              <ion-input 
+                *ngIf="exibirCampoTexto(campo) || exibirCampoMascaraPersonalizada(campo)" 
+                name="{{campo.NAME}}"
+                [(ngModel)]="campo.VALOR" 
+                (input)="onChange(campo, auxValidador)"
+                [ngModelOptions]="{standalone: true}" 
+                [required]="campo.OBRIGATORIO"
+                [formControlName]="campo.NAME"
+              ></ion-input>
+            </div>
+            <div *ngIf="!campo.OBRIGATORIO" style="width: 100vw!important;">
+              <ion-input 
+                *ngIf="exibirCampoTexto(campo) || exibirCampoMascaraPersonalizada(campo)" 
+                name="{{campo.NAME}}"
+                [(ngModel)]="campo.VALOR" 
+                (input)="onChange(campo, auxValidador)"
+                [ngModelOptions]="{standalone: true}" 
+              ></ion-input>
+            </div> 
+
+
+
+          </ion-item>
+          <ion-row *ngIf="campo.OBRIGATORIO">
+            <ion-col size="12">
+              <ion-label class="menssagem-erro" *ngIf="(formulario.controls[campo.NAME]?.status == 'INVALID' && formulario.controls[campo.NAME]?.touched )">
+                <p class="menssagem-erro">Campo obrigatório</p>
+              </ion-label>            
+            </ion-col>
+          </ion-row>
+        </ion-list>
+      </li>
+    </ul> 
+
+  </form>
+</ion-content>

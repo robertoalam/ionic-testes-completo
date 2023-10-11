@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="ionViewCanLeave()"></ion-icon>
+    <ion-title>LOCALIZACOES LIST</ion-title>
+    <ion-icon name="save" slot="end" size="large" (click)="salvar()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button expand="block" (click)="editarLocalizacao(null)">ADICIONAR LOCALIZACAO</ion-button>
+  <hr>
+  <ion-item *ngFor="let local of lista ; let i = index ">
+    <ion-grid>
+
+      <ion-row>
+        <ion-col size="10">{{local}} </ion-col>
+        <ion-col size="1">
+          <ion-icon name="create" (click)="editarLocalizacao(i)"></ion-icon>
+        </ion-col>
+        <ion-col size="1">
+          <ion-icon name="trash" (click)="apagarLocalizacao(i)"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+</ion-content>

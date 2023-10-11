@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="ionViewCanLeave()"></ion-icon>
+    <ion-title>Mascara Telefone</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">DDD CELULAR </ion-label>
+      <ion-input type="text" [(ngModel)]="celular" (input)="mascararCelular($event)" maxlength="15" step="celular"></ion-input>
+    </ion-item>
+  </ion-list> 
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">DDD TELEFONE</ion-label>
+      <ion-input type="text" [(ngModel)]="telefone" (input)="mascararTelefone($event)" maxlength="14" step="telefone"></ion-input>
+    </ion-item>
+  </ion-list> 
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">CELULAR</ion-label>
+      <ion-input type="text" [(ngModel)]="celularSemDDD" (input)="mascararCelularSemDDD($event)" maxlength="10" step="celularSemDDD"></ion-input>
+    </ion-item>
+  </ion-list> 
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">TELEFONE</ion-label>
+      <ion-input type="text" [(ngModel)]="telefoneSemDDD" (input)="mascararTelefoneSemDDD($event)" maxlength="9" step="telefoneSemDDD"></ion-input>
+    </ion-item>
+  </ion-list> 
+
+</ion-content>

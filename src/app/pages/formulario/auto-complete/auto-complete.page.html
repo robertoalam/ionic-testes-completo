@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="voltar()"></ion-icon>
+    <ion-title>AUTO COMPLETE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding ng-autocomplete">
+  <div class="ng-autocomplete" style="border:2px solid red;">
+    <ng-autocomplete 
+      [data]="data"
+      [searchKeyword]="keyword"
+      placeholder="Select country"
+      (selected)='selectEvent($event)'
+      (inputChanged)='onChangeSearch($event)'
+      (inputFocused)='onFocused($event)'
+      [itemTemplate]="itemTemplate"
+      [notFoundTemplate]="notFoundTemplate"
+      style="width: 90vw;"
+      >
+    </ng-autocomplete>
+    
+    <ng-template #itemTemplate let-item>
+      <a [innerHTML]="item.name"></a>
+    </ng-template>
+    
+    <ng-template #notFoundTemplate let-notFound>
+      <div [innerHTML]="notFound"></div>
+    </ng-template>
+  </div>
+</ion-content>

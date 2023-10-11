@@ -1,0 +1,25 @@
+ion-content {
+    --background: white !important;
+    background: white !important;
+    --color:black !important;
+    color: black !important;
+  }
+ 
+  form,ion-list,ion-item,ion-input{
+    --ion-background-color:white !important;
+    background-color: white !important;
+    color:black !important;
+    --ion-color:black !important;
+    --color:black !important;
+  }
+  ion-item::part(native) {
+    --ion-background-color:white !important;
+    background-color: white !important;
+    color:black !important;
+    --ion-color:black !important;
+    --color:black !important;
+  }  
+swiper{
+    height: 100%;
+}
+ion-label.menssagem-erro > p {color:red !important;font-weight: bold;margin-left:25px;}

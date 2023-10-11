@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="ionViewCanLeave()"></ion-icon>
+    <ion-title>Mascara Veiculo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">PLACA</ion-label>
+      <ion-input type="text" [(ngModel)]="placa" (input)="mascararPlaca($event)" step="placa"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">CHASSI</ion-label>
+      <ion-input type="text" [(ngModel)]="chassi" (input)="mascararChassi($event)" step="chassi"></ion-input>
+    </ion-item>
+  </ion-list>  
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">PLACA/CHASSI</ion-label>
+      <ion-input type="text" [(ngModel)]="placaChassi" (input)="mascararPlacaChassi($event)" step="placaChassi"></ion-input>
+    </ion-item>
+  </ion-list>  
+
+</ion-content>

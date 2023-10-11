@@ -1,0 +1,1036 @@
+{
+    "4": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Sim",
+            "ATRIBUTO_ID": 4,
+            "ID": 1
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Não",
+            "ATRIBUTO_ID": 4,
+            "ID": 2
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Não soube informar",
+            "ATRIBUTO_ID": 4,
+            "ID": 406
+        }
+    ],
+    "5": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Sim",
+            "ATRIBUTO_ID": 5,
+            "ID": 3
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Não",
+            "ATRIBUTO_ID": 5,
+            "ID": 4
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Não soube informar",
+            "ATRIBUTO_ID": 5,
+            "ID": 407
+        }
+    ],
+    "6": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Intacta",
+            "ATRIBUTO_ID": 6,
+            "ID": 5
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Deflagrada",
+            "ATRIBUTO_ID": 6,
+            "ID": 6
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Picotada",
+            "ATRIBUTO_ID": 6,
+            "ID": 7
+        }
+    ],
+    "7": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Amarelo",
+            "ATRIBUTO_ID": 7,
+            "ID": 10
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Azul",
+            "ATRIBUTO_ID": 7,
+            "ID": 9
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Bege",
+            "ATRIBUTO_ID": 7,
+            "ID": 410
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Branco",
+            "ATRIBUTO_ID": 7,
+            "ID": 11
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "Cinza",
+            "ATRIBUTO_ID": 7,
+            "ID": 12
+        },
+        {
+            "ORDEM": 6,
+            "VALOR": "Cobreado",
+            "ATRIBUTO_ID": 7,
+            "ID": 13
+        },
+        {
+            "ORDEM": 7,
+            "VALOR": "Dourado",
+            "ATRIBUTO_ID": 7,
+            "ID": 199
+        },
+        {
+            "ORDEM": 8,
+            "VALOR": "Incolor",
+            "ATRIBUTO_ID": 7,
+            "ID": 226
+        },
+        {
+            "ORDEM": 9,
+            "VALOR": "Laranja",
+            "ATRIBUTO_ID": 7,
+            "ID": 14
+        },
+        {
+            "ORDEM": 10,
+            "VALOR": "Lilás",
+            "ATRIBUTO_ID": 7,
+            "ID": 15
+        },
+        {
+            "ORDEM": 11,
+            "VALOR": "Marrom",
+            "ATRIBUTO_ID": 7,
+            "ID": 17
+        },
+        {
+            "ORDEM": 12,
+            "VALOR": "Prateado",
+            "ATRIBUTO_ID": 7,
+            "ID": 200
+        },
+        {
+            "ORDEM": 13,
+            "VALOR": "Preto",
+            "ATRIBUTO_ID": 7,
+            "ID": 16
+        },
+        {
+            "ORDEM": 14,
+            "VALOR": "Rosa",
+            "ATRIBUTO_ID": 7,
+            "ID": 19
+        },
+        {
+            "ORDEM": 15,
+            "VALOR": "Roxo",
+            "ATRIBUTO_ID": 7,
+            "ID": 20
+        },
+        {
+            "ORDEM": 16,
+            "VALOR": "Salmon",
+            "ATRIBUTO_ID": 7,
+            "ID": 411
+        },
+        {
+            "ORDEM": 17,
+            "VALOR": "Verde",
+            "ATRIBUTO_ID": 7,
+            "ID": 22
+        },
+        {
+            "ORDEM": 18,
+            "VALOR": "Vermelho",
+            "ATRIBUTO_ID": 7,
+            "ID": 21
+        }
+    ],
+    "11": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Nacional",
+            "ATRIBUTO_ID": 11,
+            "ID": 23
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Estrangeiro",
+            "ATRIBUTO_ID": 11,
+            "ID": 24
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Sem Informação",
+            "ATRIBUTO_ID": 11,
+            "ID": 25
+        }
+    ],
+    "21": [
+        {
+            "ORDEM": 1,
+            "VALOR": "P",
+            "ATRIBUTO_ID": 21,
+            "ID": 41
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "M",
+            "ATRIBUTO_ID": 21,
+            "ID": 42
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "G",
+            "ATRIBUTO_ID": 21,
+            "ID": 43
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "GG",
+            "ATRIBUTO_ID": 21,
+            "ID": 45
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "Indeterminado",
+            "ATRIBUTO_ID": 21,
+            "ID": 46
+        }
+    ],
+    "325": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Centímetro(s)",
+            "ATRIBUTO_ID": 325,
+            "ID": 192
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Metro(s)",
+            "ATRIBUTO_ID": 325,
+            "ID": 193
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Hectare(s)",
+            "ATRIBUTO_ID": 325,
+            "ID": 194
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Metro(s)²",
+            "ATRIBUTO_ID": 325,
+            "ID": 195
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "Não soube informar",
+            "ATRIBUTO_ID": 325,
+            "ID": 227
+        }
+    ],
+    "342": [
+        {
+            "ORDEM": 1,
+            "VALOR": "BrasilTelecom",
+            "ATRIBUTO_ID": 342,
+            "ID": 126
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Claro",
+            "ATRIBUTO_ID": 342,
+            "ID": 127
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "CTBC",
+            "ATRIBUTO_ID": 342,
+            "ID": 128
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Nextel",
+            "ATRIBUTO_ID": 342,
+            "ID": 129
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "TIM",
+            "ATRIBUTO_ID": 342,
+            "ID": 130
+        },
+        {
+            "ORDEM": 6,
+            "VALOR": "Vivo",
+            "ATRIBUTO_ID": 342,
+            "ID": 131
+        },
+        {
+            "ORDEM": 7,
+            "VALOR": "Oi",
+            "ATRIBUTO_ID": 342,
+            "ID": 428
+        },
+        {
+            "ORDEM": 8,
+            "VALOR": "Outro País",
+            "ATRIBUTO_ID": 342,
+            "ID": 427
+        }
+    ],
+    "364": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Miligrama",
+            "ATRIBUTO_ID": 364,
+            "ID": 186
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Decigrama",
+            "ATRIBUTO_ID": 364,
+            "ID": 188
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Grama",
+            "ATRIBUTO_ID": 364,
+            "ID": 147
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Quilograma",
+            "ATRIBUTO_ID": 364,
+            "ID": 148
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "Tonelada",
+            "ATRIBUTO_ID": 364,
+            "ID": 189
+        },
+        {
+            "ORDEM": 6,
+            "VALOR": "Não soube informar",
+            "ATRIBUTO_ID": 364,
+            "ID": 228
+        }
+    ],
+    "365": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Mililitro",
+            "ATRIBUTO_ID": 365,
+            "ID": 149
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Decilitro",
+            "ATRIBUTO_ID": 365,
+            "ID": 190
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Litro",
+            "ATRIBUTO_ID": 365,
+            "ID": 150
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Quilolitro",
+            "ATRIBUTO_ID": 365,
+            "ID": 191
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "Não soube informar",
+            "ATRIBUTO_ID": 365,
+            "ID": 229
+        }
+    ],
+    "382": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Laser",
+            "ATRIBUTO_ID": 382,
+            "ID": 166
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Matricial",
+            "ATRIBUTO_ID": 382,
+            "ID": 167
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Jato de tinta",
+            "ATRIBUTO_ID": 382,
+            "ID": 168
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Tridimensional",
+            "ATRIBUTO_ID": 382,
+            "ID": 169
+        }
+    ],
+    "402": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Macho",
+            "ATRIBUTO_ID": 402,
+            "ID": 196
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Fêmea",
+            "ATRIBUTO_ID": 402,
+            "ID": 197
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Não soube informar",
+            "ATRIBUTO_ID": 402,
+            "ID": 198
+        }
+    ],
+    "422": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Sim",
+            "ATRIBUTO_ID": 422,
+            "ID": 206
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Não",
+            "ATRIBUTO_ID": 422,
+            "ID": 207
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Não soube informar",
+            "ATRIBUTO_ID": 422,
+            "ID": 208
+        }
+    ],
+    "442": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Porção(es)",
+            "ATRIBUTO_ID": 442,
+            "ID": 241
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Cigarro(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 242
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Maço(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 243
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Pacote(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 244
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "Garrafa(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 245
+        },
+        {
+            "ORDEM": 6,
+            "VALOR": "Caixa(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 246
+        },
+        {
+            "ORDEM": 7,
+            "VALOR": "Lata(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 247
+        },
+        {
+            "ORDEM": 8,
+            "VALOR": "Galão(es)",
+            "ATRIBUTO_ID": 442,
+            "ID": 248
+        },
+        {
+            "ORDEM": 9,
+            "VALOR": "Frasco(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 249
+        },
+        {
+            "ORDEM": 10,
+            "VALOR": "Comprimido(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 250
+        },
+        {
+            "ORDEM": 11,
+            "VALOR": "Ponto(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 251
+        },
+        {
+            "ORDEM": 12,
+            "VALOR": "Unidade(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 253
+        },
+        {
+            "ORDEM": 13,
+            "VALOR": "Lote(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 255
+        },
+        {
+            "ORDEM": 14,
+            "VALOR": "Saco(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 256
+        },
+        {
+            "ORDEM": 15,
+            "VALOR": "Tijolo(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 257
+        },
+        {
+            "ORDEM": 16,
+            "VALOR": "Não soube informar",
+            "ATRIBUTO_ID": 442,
+            "ID": 258
+        },
+        {
+            "ORDEM": 17,
+            "VALOR": "Kit(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 326
+        },
+        {
+            "ORDEM": 18,
+            "VALOR": "Jogo(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 327
+        },
+        {
+            "ORDEM": 19,
+            "VALOR": "Fardo(s)",
+            "ATRIBUTO_ID": 442,
+            "ID": 328
+        }
+    ],
+    "464": [
+        {
+            "ORDEM": 1,
+            "VALOR": "RS",
+            "ATRIBUTO_ID": 464,
+            "ID": 266
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "AC",
+            "ATRIBUTO_ID": 464,
+            "ID": 268
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "AL",
+            "ATRIBUTO_ID": 464,
+            "ID": 269
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "AM",
+            "ATRIBUTO_ID": 464,
+            "ID": 272
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "AP",
+            "ATRIBUTO_ID": 464,
+            "ID": 271
+        },
+        {
+            "ORDEM": 6,
+            "VALOR": "BA",
+            "ATRIBUTO_ID": 464,
+            "ID": 273
+        },
+        {
+            "ORDEM": 7,
+            "VALOR": "CE",
+            "ATRIBUTO_ID": 464,
+            "ID": 274
+        },
+        {
+            "ORDEM": 8,
+            "VALOR": "DF",
+            "ATRIBUTO_ID": 464,
+            "ID": 275
+        },
+        {
+            "ORDEM": 9,
+            "VALOR": "ES",
+            "ATRIBUTO_ID": 464,
+            "ID": 276
+        },
+        {
+            "ORDEM": 10,
+            "VALOR": "GO",
+            "ATRIBUTO_ID": 464,
+            "ID": 277
+        },
+        {
+            "ORDEM": 11,
+            "VALOR": "MA",
+            "ATRIBUTO_ID": 464,
+            "ID": 278
+        },
+        {
+            "ORDEM": 12,
+            "VALOR": "MG",
+            "ATRIBUTO_ID": 464,
+            "ID": 281
+        },
+        {
+            "ORDEM": 13,
+            "VALOR": "MS",
+            "ATRIBUTO_ID": 464,
+            "ID": 280
+        },
+        {
+            "ORDEM": 14,
+            "VALOR": "MT",
+            "ATRIBUTO_ID": 464,
+            "ID": 279
+        },
+        {
+            "ORDEM": 16,
+            "VALOR": "PA",
+            "ATRIBUTO_ID": 464,
+            "ID": 284
+        },
+        {
+            "ORDEM": 17,
+            "VALOR": "PB",
+            "ATRIBUTO_ID": 464,
+            "ID": 283
+        },
+        {
+            "ORDEM": 18,
+            "VALOR": "PE",
+            "ATRIBUTO_ID": 464,
+            "ID": 285
+        },
+        {
+            "ORDEM": 19,
+            "VALOR": "PI",
+            "ATRIBUTO_ID": 464,
+            "ID": 286
+        },
+        {
+            "ORDEM": 20,
+            "VALOR": "PR",
+            "ATRIBUTO_ID": 464,
+            "ID": 282
+        },
+        {
+            "ORDEM": 21,
+            "VALOR": "RJ",
+            "ATRIBUTO_ID": 464,
+            "ID": 287
+        },
+        {
+            "ORDEM": 22,
+            "VALOR": "RN",
+            "ATRIBUTO_ID": 464,
+            "ID": 288
+        },
+        {
+            "ORDEM": 23,
+            "VALOR": "RO",
+            "ATRIBUTO_ID": 464,
+            "ID": 289
+        },
+        {
+            "ORDEM": 24,
+            "VALOR": "RR",
+            "ATRIBUTO_ID": 464,
+            "ID": 290
+        },
+        {
+            "ORDEM": 25,
+            "VALOR": "SC",
+            "ATRIBUTO_ID": 464,
+            "ID": 291
+        },
+        {
+            "ORDEM": 26,
+            "VALOR": "SE",
+            "ATRIBUTO_ID": 464,
+            "ID": 292
+        },
+        {
+            "ORDEM": 27,
+            "VALOR": "SP",
+            "ATRIBUTO_ID": 464,
+            "ID": 293
+        },
+        {
+            "ORDEM": 28,
+            "VALOR": "TO",
+            "ATRIBUTO_ID": 464,
+            "ID": 294
+        }
+    ],
+    "482": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Mastercard",
+            "ATRIBUTO_ID": 482,
+            "ID": 307
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Visa",
+            "ATRIBUTO_ID": 482,
+            "ID": 306
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "American Express",
+            "ATRIBUTO_ID": 482,
+            "ID": 308
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Aura",
+            "ATRIBUTO_ID": 482,
+            "ID": 312
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "Cartão BNDES",
+            "ATRIBUTO_ID": 482,
+            "ID": 314
+        },
+        {
+            "ORDEM": 6,
+            "VALOR": "Diners Club",
+            "ATRIBUTO_ID": 482,
+            "ID": 315
+        },
+        {
+            "ORDEM": 7,
+            "VALOR": "Discover Network",
+            "ATRIBUTO_ID": 482,
+            "ID": 310
+        },
+        {
+            "ORDEM": 8,
+            "VALOR": "Elo",
+            "ATRIBUTO_ID": 482,
+            "ID": 309
+        },
+        {
+            "ORDEM": 9,
+            "VALOR": "Hipercard",
+            "ATRIBUTO_ID": 482,
+            "ID": 311
+        },
+        {
+            "ORDEM": 10,
+            "VALOR": "Sorocred",
+            "ATRIBUTO_ID": 482,
+            "ID": 313
+        },
+        {
+            "ORDEM": 11,
+            "VALOR": "Outra",
+            "ATRIBUTO_ID": 482,
+            "ID": 316
+        }
+    ],
+    "483": [
+        {
+            "ORDEM": 1,
+            "VALOR": "SIM",
+            "ATRIBUTO_ID": 483,
+            "ID": 318
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "TEU",
+            "ATRIBUTO_ID": 483,
+            "ID": 319
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "TRI",
+            "ATRIBUTO_ID": 483,
+            "ID": 320
+        }
+    ],
+    "543": [
+        {
+            "ORDEM": 1,
+            "VALOR": "2019",
+            "ATRIBUTO_ID": 543,
+            "ID": 468
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "2018",
+            "ATRIBUTO_ID": 543,
+            "ID": 467
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "2017",
+            "ATRIBUTO_ID": 543,
+            "ID": 466
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "2016",
+            "ATRIBUTO_ID": 543,
+            "ID": 366
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "2015",
+            "ATRIBUTO_ID": 543,
+            "ID": 367
+        },
+        {
+            "ORDEM": 6,
+            "VALOR": "2014",
+            "ATRIBUTO_ID": 543,
+            "ID": 368
+        },
+        {
+            "ORDEM": 7,
+            "VALOR": "2013",
+            "ATRIBUTO_ID": 543,
+            "ID": 369
+        },
+        {
+            "ORDEM": 8,
+            "VALOR": "2012",
+            "ATRIBUTO_ID": 543,
+            "ID": 370
+        },
+        {
+            "ORDEM": 9,
+            "VALOR": "2011",
+            "ATRIBUTO_ID": 543,
+            "ID": 371
+        },
+        {
+            "ORDEM": 10,
+            "VALOR": "2010",
+            "ATRIBUTO_ID": 543,
+            "ID": 372
+        }
+    ],
+    "544": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Janeiro",
+            "ATRIBUTO_ID": 544,
+            "ID": 373
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Fevereiro",
+            "ATRIBUTO_ID": 544,
+            "ID": 374
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Março",
+            "ATRIBUTO_ID": 544,
+            "ID": 385
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Abril",
+            "ATRIBUTO_ID": 544,
+            "ID": 376
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "Maio",
+            "ATRIBUTO_ID": 544,
+            "ID": 377
+        },
+        {
+            "ORDEM": 6,
+            "VALOR": "Junho",
+            "ATRIBUTO_ID": 544,
+            "ID": 378
+        },
+        {
+            "ORDEM": 7,
+            "VALOR": "Julho",
+            "ATRIBUTO_ID": 544,
+            "ID": 379
+        },
+        {
+            "ORDEM": 8,
+            "VALOR": "Agosto",
+            "ATRIBUTO_ID": 544,
+            "ID": 380
+        },
+        {
+            "ORDEM": 9,
+            "VALOR": "Setembro",
+            "ATRIBUTO_ID": 544,
+            "ID": 381
+        },
+        {
+            "ORDEM": 10,
+            "VALOR": "Outubro",
+            "ATRIBUTO_ID": 544,
+            "ID": 382
+        },
+        {
+            "ORDEM": 11,
+            "VALOR": "Novembro",
+            "ATRIBUTO_ID": 544,
+            "ID": 383
+        },
+        {
+            "ORDEM": 12,
+            "VALOR": "Dezembro",
+            "ATRIBUTO_ID": 544,
+            "ID": 384
+        }
+    ],
+    "648": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Sim",
+            "ATRIBUTO_ID": 648,
+            "ID": 408
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Não",
+            "ATRIBUTO_ID": 648,
+            "ID": 409
+        }
+    ],
+    "665": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Real",
+            "ATRIBUTO_ID": 665,
+            "ID": 448
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Euro",
+            "ATRIBUTO_ID": 665,
+            "ID": 449
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Dolar",
+            "ATRIBUTO_ID": 665,
+            "ID": 450
+        },
+        {
+            "ORDEM": 4,
+            "VALOR": "Franco",
+            "ATRIBUTO_ID": 665,
+            "ID": 451
+        },
+        {
+            "ORDEM": 5,
+            "VALOR": "Libra",
+            "ATRIBUTO_ID": 665,
+            "ID": 452
+        },
+        {
+            "ORDEM": 6,
+            "VALOR": "Peso",
+            "ATRIBUTO_ID": 665,
+            "ID": 453
+        },
+        {
+            "ORDEM": 7,
+            "VALOR": "Rupia",
+            "ATRIBUTO_ID": 665,
+            "ID": 454
+        },
+        {
+            "ORDEM": 8,
+            "VALOR": "Outro",
+            "ATRIBUTO_ID": 665,
+            "ID": 456
+        },
+        {
+            "ORDEM": 9,
+            "VALOR": "Iene",
+            "ATRIBUTO_ID": 665,
+            "ID": 446
+        }
+    ],
+    "726": [
+        {
+            "ORDEM": 1,
+            "VALOR": "Sólido",
+            "ATRIBUTO_ID": 726,
+            "ID": 487
+        },
+        {
+            "ORDEM": 2,
+            "VALOR": "Líquido",
+            "ATRIBUTO_ID": 726,
+            "ID": 488
+        },
+        {
+            "ORDEM": 3,
+            "VALOR": "Gasoso",
+            "ATRIBUTO_ID": 726,
+            "ID": 489
+        }
+    ]
+}

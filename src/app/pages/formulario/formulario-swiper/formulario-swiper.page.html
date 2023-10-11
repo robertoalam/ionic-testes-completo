@@ -1,0 +1,182 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="voltar()"></ion-icon>
+    <ion-title>FORM. SWIPER</ion-title>
+    <ion-icon name="checkmark-sharp" slot="end" size="large" (click)="salvar()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <swiper #swiper [config]="config" (slideChange)="swiperSlideChanged($event)" >
+    <ng-template swiperSlide>
+      <h1>FORM 1</h1>
+      <form [formGroup]="form1">
+        <ion-list>
+          <ion-item>
+            <ion-input label="Nome completo" labelPlacement="stacked" [(ngModel)]="boletim.nome" name="nome" formControlName="nome"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form1.get('nome')?.errors">
+            <p [innerHTML]="displayMessage['nome']"></p>
+          </ion-label>
+        </ion-list>
+    
+        <ion-list>
+          <ion-item>
+            <ion-input label="CPF" labelPlacement="stacked" [(ngModel)]="boletim.cpf"  name="cpf" formControlName="cpf"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form1.get('cpf')?.errors">
+            <p [innerHTML]="displayMessage['cpf']"></p>
+          </ion-label>          
+        </ion-list>    
+    
+        <ion-list>
+          <ion-item>
+            <ion-input label="Email" labelPlacement="stacked" [(ngModel)]="boletim.email" name="email" formControlName="email"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form1.get('email')?.errors">
+            <p [innerHTML]="displayMessage['email']"></p>
+          </ion-label>   
+        </ion-list>      
+        
+        <ion-list>
+          <ion-item>
+            <ion-input label="Idade" labelPlacement="stacked" [(ngModel)]="boletim.idade" name="idade" formControlName="idade"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form1.get('idade')?.errors">
+            <p [innerHTML]="displayMessage['idade']"></p>
+          </ion-label>   
+        </ion-list>  
+    
+        <ion-list>
+          <ion-item>
+            <ion-input label="Observação" labelPlacement="stacked" [(ngModel)]="boletim.observacao" name="observacao" formControlName="observacao"></ion-input>
+          </ion-item>
+        </ion-list>        
+    
+        <div class="form-group">
+          <div class="col-md-12">
+            <p>formulario VALIDO {{ form1.valid }}</p>
+            <p>formulario TOCADO {{ form1.touched }}</p>
+            <p>formulario SUJO {{ form1.dirty }}</p>
+          </div>
+        </div>   
+      </form>
+    </ng-template>
+    
+    
+    <!-- FORM 2 -->
+    <ng-template swiperSlide>
+      <h1>FORM 2</h1>      
+
+      <form [formGroup]="form2">
+        <ion-list>
+          <ion-item>
+            <ion-input label="Nome completo" labelPlacement="stacked" [(ngModel)]="boletim.esposaNome" name="esposaNome" formControlName="esposaNome"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form2.get('esposaNome')?.errors">
+            <p [innerHTML]="displayMessage['esposaNome']"></p>
+          </ion-label>
+        </ion-list>
+    
+        <ion-list>
+          <ion-item>
+            <ion-input label="Documento" labelPlacement="stacked" [(ngModel)]="boletim.esposaDocumento" name="esposaDocumento" formControlName="esposaDocumento"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form2.get('esposaDocumento')?.errors">
+            <p [innerHTML]="displayMessage['esposaDocumento']"></p>
+          </ion-label>          
+        </ion-list>    
+    
+        <ion-list>
+          <ion-item>
+            <ion-input label="Email" labelPlacement="stacked" name="esposaEmail" [(ngModel)]="boletim.esposaEmail" formControlName="esposaEmail"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form2.get('esposaEmail')?.errors">
+            <p [innerHTML]="displayMessage['esposaEmail']"></p>
+          </ion-label>   
+        </ion-list>      
+        
+        <ion-list>
+          <ion-item>
+            <ion-input label="Idade" labelPlacement="stacked" [(ngModel)]="boletim.esposaIdade"  name="esposaIdade" formControlName="esposaIdade"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form2.get('esposaIdade')?.errors">
+            <p [innerHTML]="displayMessage['esposaIdade']"></p>
+          </ion-label>   
+        </ion-list>  
+    
+        <ion-list>
+          <ion-item>
+            <ion-input label="Observação" labelPlacement="stacked" [(ngModel)]="boletim.esposaObservacao" name="esposaObservacao" formControlName="esposaObservacao"></ion-input>
+          </ion-item>
+        </ion-list>        
+    
+        <div class="form-group">
+          <div class="col-md-12">
+            <p>formulario VALIDO {{ form2.valid }}</p>
+            <p>formulario TOCADO {{ form2.touched }}</p>
+            <p>formulario SUJO {{ form2.dirty }}</p>
+          </div>
+        </div>   
+      </form>      
+
+    </ng-template>
+
+    <!-- FORM 3 -->
+    <ng-template swiperSlide>
+      <h1>FORM 3</h1>
+      <form [formGroup]="form3">
+        <ion-list>
+          <ion-item>
+            <ion-input label="Nome completo" labelPlacement="stacked" [(ngModel)]="boletim.filhaNome" name="filhaNome" formControlName="filhaNome"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form3.get('filhaNome')?.errors">
+            <p [innerHTML]="displayMessage['filhaNome']"></p>
+          </ion-label>
+        </ion-list>
+    
+        <ion-list>
+          <ion-item>
+            <ion-input label="Documento" labelPlacement="stacked" [(ngModel)]="boletim.filhaDocumento" name="filhaDocumento" formControlName="filhaDocumento"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form3.get('filhaDocumento')?.errors">
+            <p [innerHTML]="displayMessage['filhaDocumento']"></p>
+          </ion-label>          
+        </ion-list>    
+    
+        <ion-list>
+          <ion-item>
+            <ion-input label="Email" labelPlacement="stacked" [(ngModel)]="boletim.filhaEmail" name="filhaEmail" formControlName="filhaEmail"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form3.get('filhaEmail')?.errors">
+            <p [innerHTML]="displayMessage['filhaEmail']"></p>
+          </ion-label>   
+        </ion-list>      
+        
+        <ion-list>
+          <ion-item>
+            <ion-input label="Idade" labelPlacement="stacked" [(ngModel)]="boletim.filhaIdade" name="filhaIdade" formControlName="filhaIdade"></ion-input>
+          </ion-item>
+          <ion-label class="menssagem-erro" *ngIf="form3.get('filhaIdade')?.errors">
+            <p [innerHTML]="displayMessage['filhaIdade']"></p>
+          </ion-label>   
+        </ion-list>  
+    
+        <ion-list>
+          <ion-item>
+            <ion-input label="Observação" labelPlacement="stacked" [(ngModel)]="boletim.filhaObservacao" name="filhaObservacao" formControlName="filhaObservacao"></ion-input>
+          </ion-item>
+        </ion-list>        
+    
+        <div class="form-group">
+          <div class="col-md-12">
+            <p>formulario VALIDO {{ form3.valid }}</p>
+            <p>formulario TOCADO {{ form3.touched }}</p>
+            <p>formulario SUJO {{ form3.dirty }}</p>
+          </div>
+        </div>   
+      </form>            
+ 
+    </ng-template>
+  </swiper>
+</ion-content>

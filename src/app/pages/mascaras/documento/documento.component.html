@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="ionViewCanLeave()"></ion-icon>
+    <ion-title>Mascara Documento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input type="text" [(ngModel)]="cpf" (input)="mascararCPF($event)" maxlength="14" step="cpf"></ion-input>
+    </ion-item>
+  </ion-list>  
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">CNPJ</ion-label>
+      <ion-input type="text" [(ngModel)]="cnpj" (input)="mascararCNPJ($event)" maxlength="18" step="cnpj"></ion-input>
+    </ion-item>
+  </ion-list>  
+</ion-content>

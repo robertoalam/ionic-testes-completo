@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="voltar()"></ion-icon>
+    <ion-title>MODAL</ion-title>
+    <ion-button slot="end" (click)="salvar()">OK</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-datetime 
+    #datetime1
+    presentation="{{presentation}}"
+    [value]="data1" 
+    (ionChange)="selecionado(datetime1.value)"
+    (ionCancel)="voltar()"
+    showDefaultButtons="true"
+  >
+    <span slot="time-label">Hora</span>
+  </ion-datetime>
+</ion-content>
