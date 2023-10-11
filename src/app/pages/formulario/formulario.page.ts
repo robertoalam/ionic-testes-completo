@@ -17,7 +17,6 @@ export class FormularioPage  {
     {title:'Swiper',icone:'create-outline',rota:'formulario-swiper'},
     {title:'Auto complete',icone:'create-outline',rota:'auto-complete'},
     {title:'Dinamico',icone:'create-outline',rota:'formulario-dinamico'},
-
   ];
 
 

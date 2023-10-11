@@ -7,14 +7,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },{
+    path: 'agendamento',
+    loadChildren: () => import('./pages/agendamento/agendamento.module').then( m => m.AgendamentoPageModule),
+  },{
     path: 'mascaras',
     loadChildren: () => import('./pages/mascaras/mascaras.module').then( m => m.MascarasPageModule)
   },{
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
-  },{
-    path: 'datas',
-    loadChildren: () => import('./pages/datas/datas.module').then( m => m.DatasPageModule)
   },{
     path: 'tab',
     loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)
@@ -27,13 +27,8 @@ const routes: Routes = [
   },{
     path: 'assinatura',
     loadChildren: () => import('./pages/genericos/assinatura/assinatura.module').then( m => m.AssinaturaPageModule)
-  },{
-    path: 'modal',
-    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
-  },{
-    path: 'calendarios',
-    loadChildren: () => import('./pages/calendarios/calendarios.module').then( m => m.CalendariosPageModule)
   }
+
 ];
 
 @NgModule({

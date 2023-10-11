@@ -2,11 +2,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonModal, ModalController, NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-modal',
-  templateUrl: './modal.page.html',
-  styleUrls: ['./modal.page.scss'],
+  selector: 'app-calendario-modal',
+  templateUrl: './calendario-modal.page.html',
+  styleUrls: ['./calendario-modal.page.scss'],
 })
-export class ModalPage implements OnInit {
+export class CalendarioModalPage implements OnInit {
 
   @ViewChild(IonModal) modal!: IonModal;
   

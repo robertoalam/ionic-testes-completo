@@ -4,13 +4,12 @@ import { format, parseISO } from 'date-fns';
 import { CalendarioFolhaPage } from 'src/app/componentes/calendario-folha/calendario-folha.component';
 import { CalendarioWheelPage } from 'src/app/componentes/calendario-wheel/calendario-wheel.component';
 
-
 @Component({
-  selector: 'app-calendarios',
-  templateUrl: './calendarios.page.html',
-  styleUrls: ['./calendarios.page.scss'],
+  selector: 'app-calendario-componente',
+  templateUrl: './calendario-componente.page.html',
+  styleUrls: ['./calendario-componente.page.scss'],
 })
-export class CalendariosPage implements OnInit {
+export class CalendarioComponentePage implements OnInit {
 
   @ViewChild(IonModal) modal!: IonModal;
 

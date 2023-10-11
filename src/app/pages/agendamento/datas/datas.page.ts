@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonDatetime, NavController } from '@ionic/angular';
 import { format, parseISO } from 'date-fns';
 
@@ -7,7 +7,7 @@ import { format, parseISO } from 'date-fns';
   templateUrl: './datas.page.html',
   styleUrls: ['./datas.page.scss'],
 })
-export class DatasPage  {
+export class DatasPage implements OnInit {
 
   modes = ['date','date-time','month','month-year','time','time-date','year'];
   selectedMode = 'date';
@@ -26,6 +26,9 @@ export class DatasPage  {
     private navCtrl:NavController
    ) { 
     this.setToday(); 
+  }
+  ngOnInit() {
+    
   }
 
   setToday(){ this.dataInicialFormatada = format( parseISO( format( new Date(), 'yyyy-MM-dd')+'T'+format( new Date(), 'HH:mm:ss') ), 'dd/MM/yyyy HH:mm'); }
