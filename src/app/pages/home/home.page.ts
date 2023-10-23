@@ -16,6 +16,7 @@ export class HomePage implements OnInit {
     {title:'Mascaras',icone:'construct-outline',rota:'/mascaras'},
     {title:'Assinatura',icone:'color-palette',rota:'/assinaturas'},
     {title:'Tabs',icone:'color-filter-outline',rota:'/tab'},
+    {title:'Observable',icone:'color-filter-outline',rota:'/observable'},
     // {title:'Calendarios Compon.',icone:'calendar-number-outline',rota:'/calendarios'},
     // {title:'Calendarios Modal',icone:'calendar-number-outline',rota:'/modal'},
   ];
