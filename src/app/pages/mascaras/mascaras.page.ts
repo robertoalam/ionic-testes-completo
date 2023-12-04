@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ModalController, NavController } from '@ionic/angular';
 import { MascaraService } from 'src/app/service/mascara.service';
 import { MascaraNovaService } from 'src/app/service/mascara-nova.service';
@@ -11,8 +11,9 @@ import { MascaraTelefonePage } from './telefone/telefone.component';
   templateUrl: './mascaras.page.html',
   styleUrls: ['./mascaras.page.scss'],
 })
-export class MascarasPage  {
-  
+export class MascarasPage implements OnInit {
+  dataBrazil:string="";
+  dataHoraBrazil:string="";
   cep:string = "";
   // cpf:string = "";
   // cnpj:string = "";
@@ -35,7 +36,13 @@ export class MascarasPage  {
     public mascaraNovaService: MascaraNovaService,
     public navCtrl:NavController,
     private modalController:ModalController,
-  ) { }
+  ) { 
+
+  }
+
+  ngOnInit(){
+    console.log('ngOnInit')
+  }
   
   async navegar(modulo : string){
     let componente :any;
@@ -65,6 +72,12 @@ export class MascarasPage  {
     }
   }
 
+  mascararDataBrazil( campo:any  ){
+    let componente = ( ( (campo as CustomEvent).target ) as HTMLInputElement )
+    this.dataBrazil = componente.value.replace(/(\d{2})(\d{2})(\d{4})/, '$1/$2/$3');
+  }
+
+  mascararDataHoraBrazil( el:any ){}
   mascararCEP( el:any ){ this.cep = this.mascaraService.aplicar( el ) }
   // mascararCPF( el:any ){ this.cpf = this.mascaraService.aplicar( el ) }
   // mascararCNPJ( el:any ){ this.cnpj = this.mascaraService.aplicar( el ) }

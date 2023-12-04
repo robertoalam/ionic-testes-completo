@@ -48,6 +48,27 @@
       <ion-col size="6">
         <ion-list>
           <ion-item>
+            <ion-label position="floating">DATA BR</ion-label>
+            <ion-input [(ngModel)]="dataBrazil" (keyup)="mascararDataBrazil($event)" type="text"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">DATA</ion-label>
+            <ion-input [(ngModel)]="dataHoraBrazil" (input)="mascararDataHoraBrazil($event)" type="number"></ion-input>
+          </ion-item>
+        </ion-list> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-list>
+          <ion-item>
             <ion-label position="floating">CEP</ion-label>
             <ion-input type="text" [(ngModel)]="cep" (input)="mascararCEP($event)" maxlength="9" step="cep"></ion-input>
           </ion-item>
