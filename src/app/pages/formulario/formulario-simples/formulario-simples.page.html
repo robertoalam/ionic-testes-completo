@@ -18,6 +18,23 @@
       </ion-label>  
     </ion-list>
 
+    <!-- <ion-radio-group radio-group name="nacionalidade" [(ngModel)]="cadastro.nacionalidade" formControlName="nacionalidade">
+      <ion-list-header>
+        <ion-label>Nacionalidade</ion-label>
+      </ion-list-header>
+      <ion-list>
+        <ion-item *ngFor="let o of listaNacionalidade">
+            <ion-radio [value]="o.value" slot="end"></ion-radio>
+            <ion-label>{{o.descricao}}</ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-label class="ion-text-center" *ngIf="(form.controls.nacionalidade.status == 'INVALID' && form.controls.nacionalidade.touched )">
+        <p class="menssagem-erro">Informe a nacionalidade.</p>
+      </ion-label>  
+    </ion-radio-group> -->
+      
+
+
     <ion-row>
       <ion-col>
         <ion-list>
@@ -72,7 +89,7 @@
           <ion-list>
             <ion-item>
               <ion-label position="floating">Data</ion-label>        
-              <ion-input label="Data" [value]="dataFormata" [ngModelOptions]="{standalone: true}"></ion-input>
+              <ion-input [value]="converterData(cadastro.data)" (ionChange)="converterData($event)" [ngModelOptions]="{standalone: true}"></ion-input>
             </ion-item>
           </ion-list>   
         </ion-col>       

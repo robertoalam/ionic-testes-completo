@@ -12,6 +12,10 @@ export class FormularioSimplesPage implements OnInit {
   
   cadastro = new Cadastro();
   form: FormGroup | any ;
+  listaNacionalidade:any = [
+    {value:0,descricao:'NAO'},
+    {value:1,descricao:'SIM'}
+  ];  
   listaGenero:any = [
     {id:1,descricao:'masculino'},
     {id:2,descricao:'feminino'},
@@ -28,6 +32,7 @@ export class FormularioSimplesPage implements OnInit {
   ) { 
     this.form = this.fb.group({
       'nome':['',Validators.required],
+      // 'nacionalidade':['',Validators.required],
       'genero':['',Validators.required],
       'cpf':['',Validators.required],
       'email':['',Validators.required],
@@ -43,14 +48,19 @@ export class FormularioSimplesPage implements OnInit {
 
   salvar(){
     this.form.markAllAsTouched();
+    console.log('FORM ',this.form.controls)
+    
+    
     if(! this.form.valid) return ;
     console.log('SALVOU')
   }
   voltar(){ this.navCtrl.pop() }
 
-  converterData( valor : any ){
-    if( valor == undefined) return ;
-    let data = valor.split("T")
+  converterData( campo : any ){
+    if( campo == undefined) return ;
+    if( campo.value == undefined) return ;
+    console.log('entrou ',campo)
+    let data = campo.value.split("T")
     return this.converterEuaToBr(data[0])
     return this.converterEuaToBr(data[0])+' '+this.retornarHoraMinuto(data[1])
   }

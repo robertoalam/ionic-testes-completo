@@ -1,5 +1,6 @@
 export class Cadastro {
     nome !:string;
+    nacionalidade!:boolean;
     genero!:any;
     cpf !:string;
     email !:string;
