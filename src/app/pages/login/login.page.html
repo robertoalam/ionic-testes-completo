@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="voltar()" style="color:#ccc"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <div id="formLogin">
+    <ion-item fill="outline">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input placeholder="Enter email" style="flex-direction:row-reverse;">
+        <ion-icon name="home"></ion-icon>
+      </ion-input>
+      <ion-note slot="error">Invalid email</ion-note>
+    </ion-item>
+    <br>
+    <ion-item fill="outline">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input [type]="tipo" placeholder="Enter password" style="flex-direction:row-reverse;">
+        <ion-icon [name]="icone" (click)="togglePassword()"></ion-icon>
+      </ion-input>
+      <ion-note slot="error">Invalid password</ion-note>
+    </ion-item>
+  </div>
+</ion-content>

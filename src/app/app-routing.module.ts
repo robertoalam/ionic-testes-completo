@@ -27,9 +27,12 @@ const routes: Routes = [
   },{
     path: 'assinatura',
     loadChildren: () => import('./pages/genericos/assinatura/assinatura.module').then( m => m.AssinaturaPageModule)
-  },  {
+  },{
     path: 'observable',
     loadChildren: () => import('./pages/observable/observable.module').then( m => m.ObservablePageModule)
+  },{
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   }
 
 

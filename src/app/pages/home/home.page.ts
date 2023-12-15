@@ -10,6 +10,7 @@ export class HomePage implements OnInit {
   constructor() { }
 
   paginas:any = [
+    {title:'Login',icone:'log-in-outline',rota:'/login'},
     {title:'Agendamento',icone:'calendar-number-outline',rota:'/agendamento'},
     // {title:'Datas',icone:'calendar-number-outline',rota:'/datas'},
     {title:'Formulario',icone:'create-outline',rota:'/formulario'},
