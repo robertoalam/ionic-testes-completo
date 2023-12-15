@@ -10,16 +10,13 @@ export class HomePage implements OnInit {
   constructor() { }
 
   paginas:any = [
-    {title:'Login',icone:'log-in-outline',rota:'/login'},
-    {title:'Agendamento',icone:'calendar-number-outline',rota:'/agendamento'},
-    // {title:'Datas',icone:'calendar-number-outline',rota:'/datas'},
-    {title:'Formulario',icone:'create-outline',rota:'/formulario'},
-    {title:'Mascaras',icone:'construct-outline',rota:'/mascaras'},
-    {title:'Assinatura',icone:'color-palette',rota:'/assinaturas'},
-    {title:'Tabs',icone:'color-filter-outline',rota:'/tab'},
+    {title:'Mask',icone:'construct-outline',rota:'/mascaras'},
     {title:'Observable',icone:'color-filter-outline',rota:'/observable'},
-    // {title:'Calendarios Compon.',icone:'calendar-number-outline',rota:'/calendarios'},
-    // {title:'Calendarios Modal',icone:'calendar-number-outline',rota:'/modal'},
+    {title:'Paginas',icone:'reader-outline',rota:'/views'},
+    {title:'Componentes',icone:'extension-puzzle',rota:'/componentes'},
+    // {title:'Agenda',icone:'calendar-number-outline',rota:'/agendamento'},
+    // {title:'Assinatura',icone:'color-palette',rota:'/assinaturas'},
+    // {title:'Alertas',icone:'warning-sharp',rota:'/alertas'},
   ];
 
   ngOnInit() {}

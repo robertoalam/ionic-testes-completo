@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController, NavController } from '@ionic/angular';
-import { AssinaturaPage } from '../genericos/assinatura/assinatura.page';
+import { AssinaturaPage } from '../componentes/assinatura/assinatura.page';
 import { Directory, Encoding, Filesystem } from '@capacitor/filesystem';
 import { AssinaturaService } from 'src/app/service/assinatura.service';
 

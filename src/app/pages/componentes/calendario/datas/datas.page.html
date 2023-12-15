@@ -1,0 +1,120 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" slot="start" size="large" (click)="voltar()"></ion-icon>    
+    <ion-title>DATAS</ion-title>
+    <ion-icon name="checkmark-sharp" slot="end" size="large" (click)="salvar()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-toolbar>
+  <ion-segment [(ngModel)]="selectedMode" scrollable>
+    <ion-segment-button [value]="mode" *ngFor="let mode of modes ; let i = index">
+      <ion-label>{{ mode }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+<!--   
+  // PARTE 1
+    <ion-datetime [presentation]="selectedMode"> 
+    </ion-datetime>
+  -->
+
+  <!-- 
+    // PARTE 2
+    <ion-item (click)="showPicker = !showPicker">
+    <ion-label>Date</ion-label>
+    <ion-text slot="end"> {{ formattedString }}</ion-text>
+  </ion-item>
+
+  <ion-datetime #dataFinal *ngIf="showPicker" 
+    [value]="dateValue" 
+    size="cover" 
+    (ionChange)="dateChanged( dataFinal.value )"
+    showDefaultButtons="true"
+    (ionCancel)="showPicker = false;">
+  </ion-datetime> 
+-->
+  <h6><b>TESTE 2</b> [MODAL] - CAMPO OBRIGATORIO</h6>
+  <ion-item id="open-modal">
+    <!-- <ion-icon icon="calendar-outline" slot="start" color="primary"></ion-icon>
+    <ion-label>Pick date</ion-label> -->
+    <ion-text slot="start">{{ dataInicialFormatada }}</ion-text>
+  </ion-item>
+  <ion-modal trigger="open-modal" mode="md">
+    <ng-template>
+      <ion-content>
+        <ion-datetime
+          #datetime
+          [value]="dataInicialValor" size="cover"
+          (ionChange)="dateChanged (datetime.value)"
+          (ionCancel)="showPicker = false;"
+          showDefaultButtons="true"
+          >
+          <ion-buttons slot="buttons">
+            <ion-button (click)="close()">cancel</ion-button>
+            <ion-button (click)="select()">OK</ion-button>
+          </ion-buttons>
+        </ion-datetime>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <hr>
+
+  <h6><b>TESTE 3</b> [MODAL] - NAO OBRIGATORIO</h6>
+  <ion-item id="open-modal-3">
+    <ion-icon icon="calendar-outline" slot="start" color="primary"></ion-icon>
+    <ion-label>Pick date</ion-label>
+    <ion-text slot="end">{{ dataFinalFormatada }}</ion-text>
+  </ion-item>
+  <ion-modal trigger="open-modal-3" mode="md">
+    <ng-template>
+      <ion-content>
+        <ion-datetime
+          #datetime3
+          [value]="dataFinalValor" size="cover"
+          (ionChange)="dateChanged3 (datetime3.value) "
+          (ionCancel)="showPicker3 = false;"
+          showDefaultButtons="true"
+          >
+          <ion-buttons slot="buttons">
+            <ion-button (click)="clear3()">limpar</ion-button>
+            <ion-button (click)="close3()">cancel</ion-button>
+            <ion-button (click)="select3()">OK</ion-button>
+          </ion-buttons>
+        </ion-datetime>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  
+  <hr>
+  <h6><b>TESTE 4</b> CAMPO OBRIGATORIO</h6>
+  <ion-datetime-button datetime="datetime" ></ion-datetime-button>
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template >
+      <ion-datetime 
+        id="datetime" 
+        hourCycle="h23"
+        [showDefaultButtons]="true" doneText="OK" cancelText="cancel" clear-text="Clear"
+        [(ngModel)]="teste"
+      ></ion-datetime>
+    </ng-template>
+  </ion-modal>     
+
+  <hr>
+  <h6><b>TESTE 5</b> [POPOVER]</h6>
+  <ion-item>
+    <ion-label>Pick date</ion-label>
+    <ion-input value="{{ date5 | date: 'dd/MM/yyyy' }}" id="date5" class="ion-text-end"></ion-input>
+    <ion-popover trigger="date5" size="cover">
+      <ng-template>
+        <ion-datetime presentation="date5" [(ngModel)]="date5" locale="pt-BR" ></ion-datetime>
+      </ng-template>
+    </ion-popover>
+  </ion-item>
+
+</ion-content>

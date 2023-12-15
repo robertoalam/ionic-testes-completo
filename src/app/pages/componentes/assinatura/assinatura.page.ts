@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { ModalController, NavParams } from '@ionic/angular';
+import { ModalController, NavController, NavParams } from '@ionic/angular';
 import SignaturePad from 'signature_pad';
 import { AssinaturaService } from 'src/app/service/assinatura.service';
 
@@ -25,6 +25,7 @@ export class AssinaturaPage implements OnInit {
     private modalCtrl:ModalController,
     public navParams: NavParams,
     private assinaturaService:AssinaturaService,
+    private navCtrl:NavController,
     ) { 
 
     this.arquivoNome = this.buscarNomeArquivo();
@@ -73,7 +74,7 @@ export class AssinaturaPage implements OnInit {
     let arquivo = this.assinaturaService.arquivoLer( this.file.uri  )
   }
 
-  voltar(){ return this.modalCtrl.dismiss(null, 'cancel'); }
+  voltar(){ return this.navCtrl.back() }
   seleciona() { return this.modalCtrl.dismiss( this.file ) }
   
   private buscarNomeArquivo(){

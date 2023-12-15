@@ -75,3 +75,16 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+
+ 
+ion-col { text-align: center; }
+ion-col > div.thumb{ 
+  background:rgb(202, 85, 85) ; 
+  text-align: center;
+  border-radius: 10px;
+  padding:10%;
+  margin: 0 15%;
+  font-size: 300%;
+  color:white;
+}
+label.title { color:rgb(202, 85, 85) ;  ; font-weight: bold; }
