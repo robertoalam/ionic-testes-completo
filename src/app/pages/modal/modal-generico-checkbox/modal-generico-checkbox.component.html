@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon slot="start" name="arrow-back" size="large" (click)="voltar()"></ion-icon>
+    <ion-title>{{this.titulo}}</ion-title>
+    <ion-icon slot="end" name="close" size="large" (click)="voltar()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div style="margin:auto; width: 100%;">
+    <ion-item (ionChange)="selTodos($event)" >
+      <ion-checkbox slot="start" ></ion-checkbox>
+      <ion-label><strong>Selecionar todos</strong></ion-label>
+    </ion-item>
+    <ion-list>
+      <ion-item *ngFor="let a of listagem">
+        <ion-checkbox slot="start" #checkboxes  (ionChange)="setarItemLista(a)" [(ngModel)]="a.checked" [disabled]="flagSomenteVisualizar"></ion-checkbox>
+        <ion-label>{{a.descricao}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

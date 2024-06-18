@@ -8,6 +8,7 @@ import { FormularioSwiperPageRoutingModule } from './formulario-swiper-routing.m
 
 import { FormularioSwiperPage } from './formulario-swiper.page';
 import { SwiperModule } from 'swiper/angular';
+import { BotaoModalListaModule } from 'src/app/componentes/botao-modal-lista/botao-modal-lista.module';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { SwiperModule } from 'swiper/angular';
     IonicModule,
     FormularioSwiperPageRoutingModule,
     ReactiveFormsModule,
-    SwiperModule
+    SwiperModule,BotaoModalListaModule
   ],
   declarations: [FormularioSwiperPage]
 })

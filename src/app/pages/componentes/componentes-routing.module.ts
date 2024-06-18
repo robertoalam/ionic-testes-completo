@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ComponentesPage } from './componentes.page';
+import { ModalComponent } from 'src/app/componentes/modal/modal.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,9 @@ const routes: Routes = [
   },{
     path: 'calendario',
     loadChildren: () => import('./calendario/calendario.module').then( m => m.CalendarioPageModule)
+  },{
+    path: 'modal',
+    component: ModalComponent,
   }
 ];
 

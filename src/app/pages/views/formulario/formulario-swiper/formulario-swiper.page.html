@@ -13,7 +13,7 @@
       <form [formGroup]="form1">
         <ion-list>
           <ion-item>
-            <ion-input label="Nome completo" labelPlacement="stacked" [(ngModel)]="boletim.nome" name="nome" formControlName="nome"></ion-input>
+            <ion-input label="Nome completo" labelPlacement="stacked" [(ngModel)]="boletim.nome" name="nome" formControlName="nome" required></ion-input>
           </ion-item>
           <ion-label class="menssagem-erro" *ngIf="form1.get('nome')?.errors">
             <p [innerHTML]="displayMessage['nome']"></p>
@@ -22,11 +22,14 @@
     
         <ion-list>
           <ion-item>
-            <ion-input label="CPF" labelPlacement="stacked" [(ngModel)]="boletim.cpf"  name="cpf" formControlName="cpf"></ion-input>
+            <ion-input label="CPF" labelPlacement="stacked" [(ngModel)]="boletim.cpf"  name="cpf" formControlName="cpf" (change)="teste()"></ion-input>
           </ion-item>
           <ion-label class="menssagem-erro" *ngIf="form1.get('cpf')?.errors">
             <p [innerHTML]="displayMessage['cpf']"></p>
-          </ion-label>          
+          </ion-label>
+          <ion-label class="menssagem-erro" *ngIf="form1.get('cpf')?.errors?.['validarCPF']">
+            <p>CPF inválido</p>
+          </ion-label>
         </ion-list>    
     
         <ion-list>
@@ -55,6 +58,8 @@
     
         <div class="form-group">
           <div class="col-md-12">
+            <p>CPF 1 {{ form1.controls['cpf'] }}</p>
+            <p>CPF 2 {{ form1.get('cpf')?.errors?.['validarCPF'] }}</p>
             <p>formulario VALIDO {{ form1.valid }}</p>
             <p>formulario TOCADO {{ form1.touched }}</p>
             <p>formulario SUJO {{ form1.dirty }}</p>
@@ -176,7 +181,115 @@
           </div>
         </div>   
       </form>            
- 
     </ng-template>
+ 
+    <!-- FORM 4 -->
+    <ng-template swiperSlide>
+      <h1>FORM 4</h1>
+      <form [formGroup]="form4">
+        <ion-list>
+          <ion-button expand="block" [color]="botaoEsporte.cor" (click)="abrirModalGenericoNovo({
+            'numero': 1, 
+            'botao': botaoEsporte, 
+            'flagSomenteVisualizar': false,
+            'formulario':{ 
+              'form': form4,
+              'name':'esportes', 
+              'controller': form4.controls['esportes'],
+            }})" >
+            <ion-icon [name]="botaoEsporte.icone"></ion-icon> {{botaoEsporte.label}}
+          </ion-button> 
+          <!-- <ion-input [(ngModel)]="boletim.esportes" name="esportes" formControlName="esportes"></ion-input> -->
+          <ion-label class="menssagem-erro" *ngIf="form4.get('esportes')?.errors">
+            <p [innerHTML]="displayMessage['esportes']"></p>
+          </ion-label>          
+        </ion-list>
+
+        <ion-list>
+          <ion-button expand="block" [color]="botaoBanco.cor" (click)="abrirModalGenericoNovo({
+            'numero': 2, 
+            'botao': botaoBanco, 
+            'flagSomenteVisualizar': false,
+            'formulario':{ 
+              'form': form4,
+              'name':'bancos', 
+              'controller': form4.controls['bancos'],
+            }})" >
+            <ion-icon [name]="botaoBanco.icone"></ion-icon> {{botaoBanco.label}}
+          </ion-button> 
+          <!-- <ion-input [(ngModel)]="boletim.bancos" name="bancos" formControlName="bancos"></ion-input> -->
+          <ion-label class="menssagem-erro" *ngIf="form4.get('bancos')?.errors">
+            <p [innerHTML]="displayMessage['bancos']"></p>
+          </ion-label>          
+        </ion-list>
+
+        <ion-list>
+          <ion-button expand="block" [color]="botaoDocumento.cor" 
+            (click)="abrirModalGenericoNovo({
+              'numero': 3, 
+              'botao': botaoDocumento, 
+              'flagSomenteVisualizar': false,
+              'formulario':{ 
+                'form': form4,
+                'name':'documentos', 
+                'controller': form4.controls['documentos'],
+              }})" >
+            <ion-icon [name]="botaoDocumento.icone"></ion-icon> {{botaoDocumento.label}}
+          </ion-button> 
+          <!-- <ion-input [(ngModel)]="boletim.documentos" name="documentos" formControlName="documentos"></ion-input> -->
+        </ion-list>
+
+        <!--     
+        <app-botao-modal-lista 
+          valor="teste" 
+          [color]="bancoCor" 
+          [icone]="bancoIcone" 
+          [label]="bancoLabel" 
+        ></app-botao-modal-lista>
+        
+        <ion-button block class="{{this.agressorAmeacasBotao.estilo}}" 
+          (click)="abrirModalGenerico( {'numero': 1, 'botao': this.agressorAmeacasBotao, 'flagSomenteVisualizar': this.flagSomenteVisualizar } )"
+          [ngModelOptions]="{standalone: true}">
+          <ion-icon name="{{this.agressorAmeacasBotao.icone}}"></ion-icon>
+          &nbsp; {{this.agressorAmeacasBotao.label}}
+        </ion-button> 
+        -->
+
+        <ion-list>
+          <ion-item>
+            <ion-input label="Resumo" labelPlacement="stacked" [(ngModel)]="boletim.resumo" name="resumo" formControlName="resumo"></ion-input>
+          </ion-item>
+        </ion-list>        
+
+        <div class="form-group">
+          <div class="col-md-12">
+            <p>formulario VALIDO {{ form4.valid }}</p>
+            <p>formulario TOCADO {{ form4.touched }}</p>
+            <p>formulario SUJO {{ form4.dirty }}</p>
+          </div>
+        </div>   
+      </form>
+    </ng-template>
+
+    <!-- FORM 5 -->
+    <ng-template swiperSlide>
+      <h1>FORM 5</h1>
+      <form [formGroup]="form5">
+        <ion-list>
+          <ion-item>
+            <ion-input labelPlacement="stacked" [(ngModel)]="boletim.historico" name="historico" formControlName="historico" ></ion-input>
+          </ion-item>
+        </ion-list>     
+
+        <div class="form-group">
+          <div class="col-md-12">
+            <p>formulario VALIDO {{ form5.valid }}</p>
+            <p>formulario TOCADO {{ form5.touched }}</p>
+            <p>formulario SUJO {{ form5.dirty }}</p>
+          </div>
+        </div>         
+      </form>
+    </ng-template>
+
   </swiper>
 </ion-content>

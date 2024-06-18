@@ -1,3 +1,5 @@
+import { BancoModel } from "./banco.model";
+import { EsporteModel } from "./esporte.model";
 import { ParticipanteModel } from "./participante.model";
 
 export class Boletim{
@@ -18,9 +20,17 @@ export class Boletim{
     filhaIdade !:number;
     filhaObservacao !: string;
     
+    resumo?:string;
+
     participante: ParticipanteModel = new ParticipanteModel();
+    esportes :any = [];
+    bancos : any = [];
+    documentos : any = [];
+
+    historico?:string;
 
     constructor() {
 
     }
+
 }

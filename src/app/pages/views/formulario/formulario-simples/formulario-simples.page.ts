@@ -44,6 +44,11 @@ export class FormularioSimplesPage implements OnInit {
 
   ngOnInit(){
     this.dataFormata = '15/11/1981'
+    this.initForm();
+  }
+
+  initForm(){
+    this.form.controls['nome'].setValue('BETO')
   }
 
   salvar(){
